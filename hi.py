@@ -41,3 +41,20 @@ else:
     result = "Ошибка: неизвестная операция!"
 
 print(f"Результат: {number_a} {operation} {number_b} = {result}")
+
+#advanced task 1
+def recursive_sum(numm):
+    if numm == 1:
+        return 1
+    return numm + recursive_sum(numm - 1)
+
+numm = 5
+print(f"Сумма чисел от 1 до {numm} равна {recursive_sum(numm)}")
+
+#advanced task 2
+def gcd(a, b):
+    if b == 0:
+        return a
+    return gcd(b, a % b)
+
+print(gcd(1500, 100))
