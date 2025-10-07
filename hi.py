@@ -13,3 +13,9 @@ def find_min(lst):
 numbers = [5, -2, 10, 3, -8, 0]
 print(find_min(numbers))
 
+#normal task 2
+
+n = int(input("Введите число: "))
+print(f"Таблица умножения для числа {n}:")
+for i in range(1, 11):
+    print(f"{n} × {i} = {n * i}")
